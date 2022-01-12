@@ -1,0 +1,43 @@
+.container {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+.videos {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background: rgb(238, 235, 235);
+  padding: 10px;
+  border-radius: 5px;
+
+  &__container {
+    display: flex;
+    width: 300px;
+    cursor: pointer;
+    flex-direction: column;
+    margin: 7px 0;
+    padding: 5px;
+
+  }
+  &__banner img {
+    width: 100%;
+  }
+  &__desc {
+    display: flex;
+    gap: 10px;
+
+    &__info__channel {
+      margin: 5px 5px 5px 0;
+      color: grey;
+      transition: all 0.5s;
+
+      &:hover {
+        color: black;
+        transition: all 0.5s;
+      }
+    }
+  }
+}
